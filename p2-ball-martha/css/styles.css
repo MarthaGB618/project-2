@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+header, nav, aside, article, footer, section, main, figure, figcaption {
+ display: block;
+}
+
+*{
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+#container {
+  margin: 20px auto;
+  background-color: white;
+}
+
+body {
+  font-family: "Open Sans", "Calibri", "Trebuchet MS", Verdana, sans-serif;
+  font-weight: lighter;
+  background-color: white;
+  background-position: center;
+}
+
+header {
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+header img {
+  width: 100%;
+  max-width: 250px;
+  padding: 1%;
+}
+
+h1{
+  font-weight: bold;
+  color: #2e63ae;
+  font-size: 3em;
+}
+
+.desktop-nav {
+  display: none;
+}
+/* *************************HAMBURGER MENU STYLES ********************* */
+.hamburger{
+  background:none;
+  position:absolute;
+  top: 30px;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:30px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+/* *************************HAMBURGER MENU STYLES ********************* */
+
+main {
+  background-color: white;
+  padding: 1%;
+}
+
+article p, aside p {
+  margin-bottom: 10px;
+}
+
+section {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 3px solid #2e63ae;
+  color: #2e63ae;
+  padding: 0;
+  text-shadow: none;
+  margin-bottom:10px;
+}
+
+
+img {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+aside {
+  background-color: #D2d3d4;
+  padding: 1%;
+}
+
+aside h3 {
+  color: #2e63ae;
+  padding-bottom: 5px;
+}
+
+ul {
+list-style-position: inside;
+}
+
+article figure {
+  text-align: center;
+}
+
+aside figure {
+  padding: 1%;
+  text-align: center;
+}
+
+article figure img {
+  width: 100%;
+  max-width: 700px;
+}
+figcaption {
+  font-family: "Open Sans", "Calibri", "Trebuchet MS", Verdana, sans-serif;
+  font-size: .75em;
+  color: #931f2e;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+footer {
+  background-color: #931f2e;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 1%;
+}
+
+/* ******************************  START 750PX MEDIA QUERY ****************************** */
+@media (min-width: 750px) {
+  article figure {
+    float: right;
+    width: 50%;
+    max-width: 277px;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    clear: both;
+  }
+
+  main {
+    min-height: 615px;
+  }
+}
+
+
+/* ******************************  END 750PX MEDIA QUERY ****************************** */
+
+
+/* ******************************  START 825PX MEDIA QUERY ****************************** */
+@media (min-width: 825px){
+  main {
+    min-height: 590px;
+  }
+}
+/* ******************************  END 825PX MEDIA QUERY ****************************** */
+
+
+/* ******************************  START 1000PX MEDIA QUERY ****************************** */
+@media (min-width: 1000px){
+  #container {
+    width: 960px;
+}
+
+.hamburger, .cross, .menu {
+  display: none;
+}
+
+.desktop-nav {
+  display: block;
+background-color: white;
+text-align: left;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+summary {
+  font-weight: bold;
+}
+.desktop-nav ul {
+ list-style-type: none;
+}
+
+.desktop-nav ul li {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.desktop-nav ul li a {
+  color: #931f3e;
+  font-weight: bold;
+}
+
+.desktop-nav ul li a:hover {
+  color: #231f20;
+  font-weight: bold;
+  text-decoration: none;
+}
+main {
+  float: center;
+  width: 100%;
+}
+
+article {
+  float: left;
+  width: 60%;
+
+}
+aside {
+  width: 35%;
+float: right;
+}
+
+article figure {
+  float: right;
+  padding: 0 10px 0 25px;
+}
+
+article figure img {
+  width: 250px;
+}
+
+aside figure img {
+  width: 175px
+}
+
+footer {
+    clear: both;
+}
+/* ******************************  END 1000PX MEDIA QUERY ****************************** */
+}
